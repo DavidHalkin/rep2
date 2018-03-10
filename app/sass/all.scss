@@ -1,0 +1,21 @@
+
+@import
+	'_custom_bootstrap_vatiables.scss',
+	'../../bower_components/bootstrap/scss/_functions.scss',
+	'../../bower_components/bootstrap/scss/_variables.scss',
+	'../../bower_components/bootstrap/scss/_mixins.scss',
+	'_param',
+	'_sprite',
+	'_header',
+	'_footer';
+@include media-breakpoint-up(mddd) {
+	.btn-custom_green{
+		background: theme-color('primary');
+		&:hover{
+			background:theme-color('custom_green');
+		}
+	}
+	.container{
+		background:theme-color('custom_green');
+	}
+}
