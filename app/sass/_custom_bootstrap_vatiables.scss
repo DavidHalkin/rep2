@@ -1,11 +1,18 @@
 $theme-colors: (
    "custom_green": darkmagenta
 );
+$btn-focus-width:0;
+$navbar-dark-active-color: #ffa200;
+$navbar-dark-hover-color:#ffa200;
+$navbar-dark-color: #fff;
+$font-family-base: Myriad_Pro;
+
+$input-focus-box-shadow: none;
+$body-color: #474747;
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
-  mddd: 800px,
   lg: 992px,
   xl: 1200px
 );
