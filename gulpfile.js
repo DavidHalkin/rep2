@@ -116,7 +116,7 @@ gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'bower_components/jquery/dist/jquery.min.js', 
 		'bower_components/fancybox/dist/jquery.fancybox.min.js',
-		'bower_components/jquery.steps/build/jquery.steps.min.js',
+		'bower_components/smartwizard/dist/js/jquery.smartWizard.min.js',
 		'bower_components/bootstrap/dist/js/bootstrap.bundle.min.js',
 		'bower_components/jcf/dist/js/jcf.select.js',
 		'bower_components/jcf/dist/js/jcf.js'
@@ -132,6 +132,7 @@ gulp.task('css-libs', ['sass'], function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'bower_components/fancybox/dist/jquery.fancybox.min.css',
 		'bower_components/font-awesome/css/font-awesome.min.css',
+		'bower_components/smartwizard/dist/css/smart_wizard.min.css',
 		'bower_components/jcf/dist/css/theme-minimal/jcf.css'
 		])
 		.pipe(sourcemaps.init())

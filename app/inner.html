@@ -16,40 +16,256 @@
 		<div class="wrapper">
 			<header>
 				<div class="container">
-					<div class="header">
-						<nav class="navbar navbar-expand-md navbar-dark">
-						  <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
-						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-						    <span class="navbar-toggler-icon"></span>
-						  </button>
-						  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-							<ul class="navbar-nav ml-auto">
-								<li class="nav-item dropdown mr-4">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									  fatz.ws@gmail.com
-									</a>
-									<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-							          <a class="dropdown-item" href="#">Action</a>
-							          <a class="dropdown-item" href="#">Another action</a>
-							          <a class="dropdown-item" href="#">Something else here</a>
-						        	</div>
-								</li>
-								<li class="nav-item lang_link dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									EN
-									</a>
-									<div class="dropdown-menu dropdown-menu-right lang_menu" aria-labelledby="navbarDropdownMenuLink">
-										<a class="dropdown-item" href="#">RU</a>
-										<a class="dropdown-item" href="#">UA</a>
-										<a class="dropdown-item" href="#">DE</a>
-									</div>
-								</li>
-							</ul>
-						  </div>
-						</nav>
+					<div class="row d-block">
+						<div class="header">
+							<nav class="navbar navbar-expand-md navbar-dark">
+							  <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+							  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+							    <span class="navbar-toggler-icon"></span>
+							  </button>
+							  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+								<ul class="navbar-nav ml-auto">
+									<li class="nav-item dropdown  mr-0 mr-md-4">
+										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										  fatz.ws@gmail.com
+										</a>
+										<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+								          <a class="dropdown-item" href="#">Action</a>
+								          <a class="dropdown-item" href="#">Another action</a>
+								          <a class="dropdown-item" href="#">Something else here</a>
+							        	</div>
+									</li>
+									<li class="nav-item lang_link dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										EN
+										</a>
+										<div class="dropdown-menu dropdown-menu-right lang_menu" aria-labelledby="navbarDropdownMenuLink">
+											<a class="dropdown-item" href="#">RU</a>
+											<a class="dropdown-item" href="#">UA</a>
+											<a class="dropdown-item" href="#">DE</a>
+										</div>
+									</li>
+								</ul>
+							  </div>
+							</nav>
+						</div>
 					</div>
 				</div>
 			</header>
+			<div class="main_holder">
+				<div class="container">
+					<div class="row bg-white ">
+						<div class="sidebar col-lg-4 col-12">
+
+							<button class=" btn btn-block btn-outline-custom_color btn_toogle btn_toogle_menu_js"><i class="fa fa-sliders" aria-hidden="true"></i> Options</button>
+
+							<div class="sidebar_holder sidebar_holder_js_toogle">
+								<i class="fa fa-times-circle btn_close_menu js_close_menu" aria-hidden="true"></i>
+								<ul class="sidebar_nav text-uppercase">
+									<li class="active">
+										<a href="inner.html">
+											<i class="fa fa-fw fa-th-large " aria-hidden="true"></i>
+											Dashboard 
+										</a>
+									</li>
+									<li>
+										<a href="transaction.html">
+											<i class="fa fa-fw fa-refresh" aria-hidden="true"></i>
+											transaction
+										</a>
+									</li>
+									<li>
+										<a href="settings.html">
+											<i class="fa fa-fw fa-cog" aria-hidden="true"></i>
+											Settings
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="content col-lg  col-12">
+							<div class="row">
+								<div class="col-xl-3">
+									<ul class="list_rate">
+										<li>EUR/BTC: <strong>9210.54</strong></li>
+										<li>EUR/BTC: <strong>9210.54</strong></li>
+										<li>EUR/BTC: <strong>9210.54</strong></li>
+										<li>EUR/BTC: <strong>9210.54</strong></li>
+										<li>EUR/BTC: <strong>9210.54</strong></li>
+										<li>EUR/: <strong>9210.54</strong></li>
+										<li>EUR/BTC: <strong>9210.54</strong></li>
+										<li>EUR/BTC: <strong>9210.54</strong></li>
+									</ul>
+								</div>
+								<div class="col-xl-9">
+									<div class="calc_tab_block calc_tab_block--in_content">
+										<ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
+											<li class="nav-item">
+												<a class="nav-link active" id="buy-tab" data-toggle="tab" href="#buy" role="tab" aria-controls="buy" aria-selected="true">BUY</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id="sell-tab" data-toggle="tab" href="#sell" role="tab" aria-controls="sell" aria-selected="false">SELL</a>
+											</li>
+										</ul>
+										<div class="tab-content" id="myTabContent">
+											<div class="tab-pane fade show active" id="buy" role="tabpanel" aria-labelledby="buy-tab">
+												<div class="calc_form">
+													<form action="#">
+														<div class="calc_wrpap">
+															<div class="calc_header">
+																<h3 class="text-center">Crypto Calculator</h3>
+															</div>
+															<div class="calc_cnt">
+																<div class="row-custom">
+																	<div class="col-cstm">
+																		<select class="present" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+																			<option data-image="images/card_ico.png" value="v4">Bank Card</option>
+																			<option data-image="images/test_ico.png" value="v5">Bank Card2</option>
+																			<option data-image="images/card_ico.png" value="v6">Bank Card</option>
+																		</select>
+																	</div>
+																	<div class="col-cstm">
+																		<div class="input-group">
+																			<div class="input-group-prepend ">
+																				<span class="input-group-text ">
+																					<span class="text-truncate">Receive</span>
+																				</span>
+																			</div>
+																			<input type="text" class="form-control text-right" aria-label="Text input with dropdown button" value="0.337453">
+																			<div class="input-group-append">
+																				<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BTC</button>
+																				<div class="dropdown-menu dropdown-menu-right">
+																					<a class="dropdown-item" href="#">BTC</a>
+																					<a class="dropdown-item" href="#">BTC</a>
+																					<a class="dropdown-item" href="#">BTC</a>
+																					<div role="separator" class="dropdown-divider"></div>
+																					<a class="dropdown-item" href="#">BTC</a>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="row-custom">
+																	<div class="col-cstm">
+																		<div class="input-group">
+																			<div class="input-group-prepend ">
+																				<span class="input-group-text ">
+																					<span class="text-truncate">Deposit</span>
+																				</span>
+																			</div>
+																			<input id="q1" type="text" class="form-control text-right" aria-label="Text input with dropdown button" value="150">
+																			<div class="input-group-append">
+																				<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EUR</button>
+																				<div class="dropdown-menu dropdown-menu-right">
+																					<a class="dropdown-item" href="#">Action</a>
+																					<a class="dropdown-item" href="#">Another action</a>
+																					<a class="dropdown-item" href="#">Something else here</a>
+																					<div role="separator" class="dropdown-divider"></div>
+																					<a class="dropdown-item" href="#">Separated link</a>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	
+																</div>
+																<div class="txt_info text-md-right">
+																	<h4>Commision details:</h4>
+																	<p><span>Bank card: 5%</span> <span>Our: 5%</span> <span>Network: 0.001</span></p>
+																</div>
+															</div>
+															<div class="calc_footer">
+																<button class="btn btn-block btn_grad">START EXCHANGE</button>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+											<div class="tab-pane fade" id="sell" role="tabpanel" aria-labelledby="sell-tab">
+												<div class="calc_form">
+													<form action="#">
+														<div class="calc_wrpap">
+															<div class="calc_header reverse">
+																<h3 class="text-center">Crypto Calculator</h3>
+															</div>
+															<div class="calc_cnt">
+																<div class="row-custom">
+																	<div class="col-cstm">
+																		<select class="present" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+																			<option data-image="images/card_ico.png" value="v4">Bank Card</option>
+																			<option data-image="images/test_ico.png" value="v5">Bank Card2</option>
+																			<option data-image="images/card_ico.png" value="v6">Bank Card</option>
+																		</select>
+																	</div>
+																	<div class="col-cstm">
+																		<div class="input-group">
+																			<div class="input-group-prepend ">
+																				<span class="input-group-text ">
+																					<span class="text-truncate">Receive</span>
+																				</span>
+																			</div>
+																			<input type="text" class="form-control text-right" aria-label="Text input with dropdown button" value="0.337453">
+																			<div class="input-group-append">
+																				<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BTC</button>
+																				<div class="dropdown-menu dropdown-menu-right">
+																					<a class="dropdown-item" href="#">Action</a>
+																					<a class="dropdown-item" href="#">Another action</a>
+																					<a class="dropdown-item" href="#">Something else here</a>
+																					<div role="separator" class="dropdown-divider"></div>
+																					<a class="dropdown-item" href="#">Separated link</a>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="row-custom">
+																	<div class="col-cstm">
+																		<div class="input-group">
+																			<div class="input-group-prepend ">
+																				<span class="input-group-text ">
+																					<span class="text-truncate">Deposit</span>
+																				</span>
+																			</div>
+																			<input id="q1" type="text" class="form-control text-right" aria-label="Text input with dropdown button" value="150">
+																			<div class="input-group-append">
+																				<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EUR</button>
+																				<div class="dropdown-menu dropdown-menu-right">
+																					<a class="dropdown-item" href="#">Action</a>
+																					<a class="dropdown-item" href="#">Another action</a>
+																					<a class="dropdown-item" href="#">Something else here</a>
+																					<div role="separator" class="dropdown-divider"></div>
+																					<a class="dropdown-item" href="#">Separated link</a>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-cstm">
+																		<select class="present" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+																			<option data-image="images/card_ico.png" value="v4">Bank Card</option>
+																			<option data-image="images/test_ico.png" value="v5">Bank Card2</option>
+																			<option data-image="images/card_ico.png" value="v6">Bank Card</option>
+																		</select>
+																	</div>
+																</div>
+																<div class="txt_info text-md-right">
+																	<h4>Commision details:</h4>
+																	<p><span>Bank card: 54%</span> <span>Our: 5%</span> <span>Network: 0.00144</span></p>
+																</div>
+															</div>
+															<div class="calc_footer">
+																<button class="btn btn-block btn_grad">START EXCHANGE</button>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="footer">
 			<div class="container">
@@ -69,7 +285,7 @@
 				      <li class="nav-item">
 				        <a class="nav-link" href="#">Affilate program</a>
 				      </li>
-				      <li class="nav-item dropdown">
+				      <li class="nav-item dropdown dropup">
 				        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				           Our company
 				        </a>
@@ -87,7 +303,6 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/jquery.fancybox.min.js"></script>
-		<script src="js/jquery.steps.min.js"></script>
 		<script src="js/jcf.js"></script>
 		<script src="js/jcf.select.js"></script>
 		<script src="js/main.js"></script>

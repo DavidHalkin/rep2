@@ -1,0 +1,68 @@
+$blue_grad:linear-gradient(to right,
+	rgba(0,185,249,1) 0%,
+	rgba(0,165,244,1) 28%,
+	rgba(0,107,228,1) 84%,
+	rgba(0,98,226,1) 96%,
+	rgba(0,100,225,1) 100%);
+$pink_grad: linear-gradient(to right, rgb(255, 133, 132) 0%, rgb(255, 186, 186) 80%, rgb(255, 197, 195) 100%);
+
+$green_grad:linear-gradient(to right, rgb(207, 251, 183) 0%, rgb(126, 252, 167) 40%, rgb(19, 253, 157) 59%, rgb(0, 254, 145) 100%);
+
+
+$orange_grad: linear-gradient(to right, rgb(255, 146, 137) 0%, rgb(255, 198, 133) 69%, rgb(255, 221, 140) 100%);
+$gray_grad:linear-gradient(to right, rgb(213, 213, 213) 0%, rgb(254, 254, 254) 100%);
+
+// icons
+.ic1 {
+  @include sprite($ic1);
+}
+.ic2 {
+  @include sprite($ic2);
+}
+.ic3 {
+  @include sprite($ic3);
+}
+.canceled {
+  @include sprite($canceled);
+}
+.success {
+  @include sprite($success);
+}
+
+// step icons
+.current_step {
+  @include sprite($current_step);
+}
+.done_step {
+  @include sprite($done_step);
+}
+.mail_step {
+  @include sprite($mail_step);
+}
+.mail_step_done {
+  @include sprite($mail_step_done);
+}
+.phone_step {
+  @include sprite($phone_step);
+}
+.phone_step_done {
+  @include sprite($phone_step_done);
+}
+.success_step {
+  @include sprite($success_step);
+}
+.success_step_done {
+  @include sprite($success_step_done);
+}
+.upload_step {
+  @include sprite($upload_step);
+}
+.upload_step_done {
+  @include sprite($upload_step_done);
+}
+.card_step {
+  @include sprite($card_step);
+}
+.card_step_done {
+  @include sprite($card_step_done);
+}

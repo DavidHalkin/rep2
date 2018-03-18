@@ -1,5 +1,6 @@
 $theme-colors: (
-   "custom_green": darkmagenta
+   "custom_color": darkmagenta,
+   "custom_gray": #f6f5f5
 );
 $btn-focus-width:0;
 $navbar-dark-active-color: #ffa200;
@@ -11,6 +12,7 @@ $input-focus-box-shadow: none;
 $body-color: #474747;
 $grid-breakpoints: (
   xs: 0,
+  smm: 400px,
   sm: 576px,
   md: 768px,
   lg: 992px,
