@@ -1116,7 +1116,7 @@ h3{
 .steps_holder{
 	padding: 23px 0;
 	@include media-breakpoint-up(sm) {
-		min-height: 400px;
+		// min-height: 400px;
 	}
 }
 .success_info{
@@ -1259,32 +1259,25 @@ h3{
 }
 .inline_select{
 	width: auto !important;
-	.jcf-select{
-		// display: inline-block;
-		// min-width: 50%;
-		// width: auto;
-	}
 	strong{
 		font-weight: normal;
 		font-size: 18px;
 		line-height: 22px;
 		color: #767676;
-		// padding-right: 15px;
-		// min-width: 50%;
 	}
 }
 .sw-container{
-	// min-height: 200px !important;
+	min-height: 200px !important;
 }
-#step-1{
-	background: #000;
-}
-#step-2{
-	background: red;
-}
-#step-3{
-	background: green;
-}
-#step-4{
-	background: orange;
-}
+// #step-1{
+// 	background: #000;
+// }
+// #step-2{
+// 	background: red;
+// }
+// #step-3{
+// 	background: green;
+// }
+// #step-4{
+// 	background: orange;
+// }

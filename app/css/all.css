@@ -536,8 +536,6 @@ h3 { font-size: 36px; line-height: 43px; }
 
 .steps_holder { padding: 23px 0; }
 
-@media (min-width: 576px) { .steps_holder { min-height: 400px; } }
-
 .success_info { -webkit-border-radius: 13px; border-radius: 13px; padding: 15px; }
 
 .success_info p { margin: 0; font-size: 24px; line-height: 28px; }
@@ -590,12 +588,6 @@ h3 { font-size: 36px; line-height: 43px; }
 
 .inline_select strong { font-weight: normal; font-size: 18px; line-height: 22px; color: #767676; }
 
-#step-1 { background: #000; }
-
-#step-2 { background: red; }
-
-#step-3 { background: green; }
-
-#step-4 { background: orange; }
+.sw-container { min-height: 200px !important; }
 
 /*# sourceMappingURL=all.css.map */
