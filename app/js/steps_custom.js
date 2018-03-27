@@ -42,32 +42,37 @@
                                 markDoneStep: true, // add done css
                                 markAllPreviousStepsAsDone: true, // When a step selected by url hash, all previous steps are marked done
                                 removeDoneStepOnNavigateBack: true, // While navigate back done step after active step will be cleared
-                                enableAnchorOnDoneStep: true // Enable/Disable the done steps navigation
+                                enableAnchorOnDoneStep: true, // Enable/Disable the done steps navigation
+                                enableAllAnchors: true
                             }
                  });
 
-            $("#smartwizard").on("leaveStep", function(e, anchorObject, stepNumber, stepDirection) {
-                var elmForm = $("#form-step-" + stepNumber);
-                // stepDirection === 'forward' :- this condition allows to do the form validation
-                // only on forward navigation, that makes easy navigation on backwards still do the validation when going next
-                if(stepDirection === 'forward' && elmForm){
-                    elmForm.validator('validate');
-                    var elmErr = elmForm.children('.has-error');
-                    if(elmErr && elmErr.length > 0){
-                        // Form validation failed
-                        return false;
-                    }
-                }
-                return true;
-            });
-
-            // $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
-            //     // Enable finish button only on last step
-            //     if(stepNumber == 4){
-            //         $('.sw-toolbar').removeClass('processing');
-            //     }else{
-            //         $('.sw-toolbar').addClass('processing');
+            // $("#smartwizard").on("leaveStep", function(e, anchorObject, stepNumber, stepDirection) {
+            //     var elmForm = $("#form-step-" + stepNumber);
+            //     // stepDirection === 'forward' :- this condition allows to do the form validation
+            //     // only on forward navigation, that makes easy navigation on backwards still do the validation when going next
+            //     if(stepDirection === 'forward' && elmForm){
+            //         elmForm.validator('validate');
+            //         var elmErr = elmForm.children('.has-error');
+            //         if(elmErr && elmErr.length > 0){
+            //             // Form validation failed
+            //             return false;
+            //         }
             //     }
+            //     return true;
             // });
+
+            $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
+                // Enable finish button only on last step
+                // if(stepNumber == 4){
+                //     // $('.sw-toolbar').removeClass('processing');
+                //     alert("шаг == 4");
+                // }else{
+                //     // $('.sw-toolbar').addClass('processing');
+                //       alert("шаг != 4");
+                // }
+                // var customStep = +stepNumber;
+                // alert("шаг номер:" + customStep);
+            });
 
         });
